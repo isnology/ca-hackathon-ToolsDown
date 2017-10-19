@@ -35,7 +35,7 @@ source : https://trello.com/b/hVHQ6Bai/ca-hackathone1
 
 ## Database Diagram
 
-![](app/assets/images/DB Diagram.png)
+![](app/assets/images/DBDiagram.png)
 
 
 <!-- ![](https://www.danmartell.com/wp-content/uploads/2014/10/Maslows-Hierarchy-of-Needs-1024x791.jpg) -->
@@ -43,8 +43,8 @@ source : https://trello.com/b/hVHQ6Bai/ca-hackathone1
 
 ## Wireframes
 ![](app/assets/images/Wireframe.png)
-![](app/assets/images/Color Pallette.png)
-![](app/assets/images/Font Style.png)
+![](app/assets/images/ColorPallette.png)
+![](app/assets/images/FontStyle.png)
 
 
 source : https://www.figma.com/file/QbBRV41PrEE4PIa4HUuOxDDY/Tools-Down
