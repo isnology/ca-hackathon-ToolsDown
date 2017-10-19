@@ -28,12 +28,21 @@ schedule has_one: reason
 - type: string
 - schedule: references
 
-Inline-style: ![DB Diagram](images/DB Diagram.png)
+## Database Diagram
+
+![](images/DB Diagram.png)
 
 
-Inline-style: !["Marlow Image"](https://www.danmartell.com/wp-content/uploads/2014/10/Maslows-Hierarchy-of-Needs-1024x791.jpg)
+<!-- ![](https://www.danmartell.com/wp-content/uploads/2014/10/Maslows-Hierarchy-of-Needs-1024x791.jpg) -->
 
 
+## Wireframes
+![](images/Wireframe.png)
+![](images/Color Pallette.png)
+![](images/Font Style.png)
+
+
+source : https://www.figma.com/file/QbBRV41PrEE4PIa4HUuOxDDY/Tools-Down
 
 
 
