@@ -28,18 +28,23 @@ schedule has_one: reason
 - type: string
 - schedule: references
 
+Trello
+
+source : https://trello.com/b/hVHQ6Bai/ca-hackathone1
+
+
 ## Database Diagram
 
-![](images/DB Diagram.png)
+![](assets/images/DB Diagram.png)
 
 
 <!-- ![](https://www.danmartell.com/wp-content/uploads/2014/10/Maslows-Hierarchy-of-Needs-1024x791.jpg) -->
 
 
 ## Wireframes
-![](images/Wireframe.png)
-![](images/Color Pallette.png)
-![](images/Font Style.png)
+![](assets/images/Wireframe.png)
+![](assets/images/Color Pallette.png)
+![](assets/images/Font Style.png)
 
 
 source : https://www.figma.com/file/QbBRV41PrEE4PIa4HUuOxDDY/Tools-Down
