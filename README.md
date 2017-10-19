@@ -1,12 +1,54 @@
-# Tools Down
+# App Name : Tools Down
+
+##  Model User
+
+- email:string
+
+user has_one: profile
+user has_many: schedule
+
+## Model Profile
+
+- image_data: text
+- first_name: string
+- last_name: string
+- user:references
+
+## Schedule
+- title: string
+- start_time: datetime
+- end_time: datetime
+- message: text
+- user: references
+
+schedule has_one: reason
+
+## Reason
+- description: text
+- type: string
+- schedule: references
+
+Trello
+
+source : https://trello.com/b/hVHQ6Bai/ca-hackathone1
 
 
+## Database Diagram
 
-Thinker:	Trello
+![](app/assets/images/DBDiagram.png)
 
-Design:	    Figma
 
-!image[](https://www.google.com.au/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwikzuLF7fvWAhXLoJQKHblCDy8QjRwIBw&url=https%3A%2F%2Fwww.simplypsychology.org%2Fmaslow.html&psig=AOvVaw0fwQIOVj4w802TTCM2b_0r&ust=1508473954519381)
+<!-- ![](https://www.danmartell.com/wp-content/uploads/2014/10/Maslows-Hierarchy-of-Needs-1024x791.jpg) -->
+
+
+## Wireframes
+![](app/assets/images/Wireframe.png)
+![](app/assets/images/ColorPallette.png)
+![](app/assets/images/FontStyle.png)
+
+
+source : https://www.figma.com/file/QbBRV41PrEE4PIa4HUuOxDDY/Tools-Down
+
 add shaun Michale and Andrew as colaborators
 
 another change by glenn
