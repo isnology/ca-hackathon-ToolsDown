@@ -200,11 +200,8 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.beta)
   byebug
   coffee-rails (~> 4.2)
-<<<<<<< HEAD
   devise
-=======
   dotenv-rails
->>>>>>> b1c233bc24985390df19bb5aad879440a69b3803
   fastimage
   image_processing
   jbuilder (~> 2.5)
