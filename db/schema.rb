@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(version: 20171019232339) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
+  create_table "profiles", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "image_data"
+    t.index ["user_id"], name: "index_profiles_on_user_id"
   end
 
   create_table "profiles", force: :cascade do |t|
