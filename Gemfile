@@ -40,6 +40,7 @@ gem 'image_processing'
 gem 'mini_magick'
 gem 'shrine'
 gem 'delayed_job_active_record'
+gem 'daemons'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
