@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
 root  "profiles#index"
   get 'welcome/index'
+  root "profiles#index"
   resources :welcome
   resources :profiles
   devise_for :users
