@@ -5,8 +5,12 @@
       <br>
       <h3>Please enter details to sign up</h3>
 
-      <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-        <%= devise_error_messages! %>
+
+<%= image_tag("ToolsDown.png", size: "200x200") %>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
 
         <div class="field">
           <%= f.label :email %><br />
