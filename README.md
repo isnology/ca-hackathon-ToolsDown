@@ -1,6 +1,6 @@
 # App Name : Tools Down
 
-##  Model User
+The tools down app is the new app designed to remind users to tkae time out of the day away from work so the user will have a work/life balance.
 
 - email:string
 
@@ -49,11 +49,11 @@ source : https://trello.com/b/hVHQ6Bai/ca-hackathone1
 
 source : https://www.figma.com/file/QbBRV41PrEE4PIa4HUuOxDDY/Tools-Down
 
-add shaun Michale and Andrew as colaborators
+add shaun Michale and Andrew as collaborators
 
-another change by glenn
-
-##Tools Down
-
-
-#Another change
+## to schedule messages
+- add delayed_job gem
+- create table in db
+- create a scaffold for entry of scheduled messages
+- use active job to add the schedule the message
+  - create an active job for the message
