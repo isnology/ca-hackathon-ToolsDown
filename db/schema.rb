@@ -28,8 +28,6 @@ ActiveRecord::Schema.define(version: 20171019231933) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.index ["priority", "run_at"], name: "delayed_jobs_priority"
-<<<<<<< HEAD
-=======
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -40,7 +38,6 @@ ActiveRecord::Schema.define(version: 20171019231933) do
     t.datetime "updated_at", null: false
     t.text "image_data"
     t.index ["user_id"], name: "index_profiles_on_user_id"
->>>>>>> master
   end
 
   create_table "users", force: :cascade do |t|
