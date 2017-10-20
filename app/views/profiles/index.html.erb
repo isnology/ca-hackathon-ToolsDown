@@ -1,5 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+<div class="container container-table">
+  <div class="row vertical-center-row">
+    <div class="text-center col-md-12 col-md-offset-12">
+
 <h1>Profiles</h1>
 
 <table>
@@ -13,7 +17,7 @@
     </tr>
   </thead>
 
-  <tbody>
+  <tbody> 
     <% @profiles.each do |profile| %>
       <tr>
         <td><%= image_tag profile.image_url, size: "100x100" %>
@@ -41,3 +45,7 @@
     <%= link_to "Sign Up", new_user_registration_path, class: "bth btn-primary"%>
   <%end>%>
 </nav>  
+
+    </div>
+  </div>
+</div>
