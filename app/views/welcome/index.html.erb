@@ -4,6 +4,15 @@
      <h1>Welcome</h1>
     </div>
   </div>
+  <% if @display %>
+  <div class="row vertical-center-row">
+    <div class="text-center col-md-12 col-md-offset-12">
+     <%= @message %>
+
+     <a href="users/sign_up" class="btn btn-danger" role="button">Link Button</a>
+    </div>
+    <%end%>
+  </div>
 </div>
 
 
