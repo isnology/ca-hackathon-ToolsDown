@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 20171019232339) do
     t.datetime "updated_at", null: false
     t.text "image_data"
     t.index ["user_id"], name: "index_profiles_on_user_id"
+<<<<<<< HEAD
   end
 
   create_table "profiles", force: :cascade do |t|
@@ -46,6 +47,8 @@ ActiveRecord::Schema.define(version: 20171019232339) do
     t.datetime "updated_at", null: false
     t.text "image_data"
     t.index ["user_id"], name: "index_profiles_on_user_id"
+=======
+>>>>>>> 6b58e8ee74ce223684b3f2dd061f37c85bec280d
   end
 
   create_table "users", force: :cascade do |t|
