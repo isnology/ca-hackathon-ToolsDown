@@ -4,6 +4,10 @@ class WelcomeController < ApplicationController
     @message = 'Take a short break from work'
   end
 
+  def show 
+    
+  end
+
   def new
     @welcome = Welcome.new
   end

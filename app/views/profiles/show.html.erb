@@ -14,5 +14,7 @@
    <%= image_tag @profile.image_url, size: "200x200" %>
 </p>
 
+
+<%= link_to 'Welcome', welcome_index_path %>
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
 <%= link_to 'Back', profiles_path %>
