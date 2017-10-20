@@ -49,11 +49,12 @@ source : https://trello.com/b/hVHQ6Bai/ca-hackathone1
 
 source : https://www.figma.com/file/QbBRV41PrEE4PIa4HUuOxDDY/Tools-Down
 
-add shaun Michale and Andrew as colaborators
+add shaun Michale and Andrew as collaborators
 
-another change by glenn
+## to schedule messages
+- add delayed_job gem
+- create table in db
+- create a scaffold for entry of scheduled messages
+- use active job to add the schedule the message
+  - create an active job for the message
 
-##Tools Down
-
-
-#Another change
