@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :stock_prices
   resources :schedules
   get 'welcome/index'
   resources :welcome
