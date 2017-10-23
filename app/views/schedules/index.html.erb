@@ -1,0 +1,47 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Schedules</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Run at</th>
+      <th>Priority</th>
+      <th>Message</th>
+      <th>Next month</th>
+      <th>Next week</th>
+      <th>Next day</th>
+      <th>Next minutes</th>
+      <th>Valid days</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @schedules.each do |schedule| %>
+      <tr>
+        <td><%= schedule.user.profile.full_name %></td>
+        <td><%= schedule.run_at %></td>
+        <td><%= schedule.priority %></td>
+        <td><%= schedule.message %></td>
+        <td><%= schedule.next_month %></td>
+        <td><%= schedule.next_week %></td>
+        <td><%= schedule.next_day %></td>
+        <td><%= schedule.next_minutes %></td>
+        <td><%= schedule.valid_days %></td>
+        <td><%= schedule.start_time %></td>
+        <td><%= schedule.end_time %></td>
+        <td><%= link_to 'Show', schedule %></td>
+        <td><%= link_to 'Edit', edit_schedule_path(schedule) %></td>
+        <td><%= link_to 'Destroy', schedule, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Schedule', new_schedule_path %>

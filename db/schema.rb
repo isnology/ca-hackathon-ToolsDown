@@ -10,25 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171019231933) do
+ActiveRecord::Schema.define(version: 20171022081528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "delayed_jobs", force: :cascade do |t|
-    t.integer "priority", default: 0, null: false
-    t.integer "attempts", default: 0, null: false
-    t.text "handler", null: false
-    t.text "last_error"
-    t.datetime "run_at"
-    t.datetime "locked_at"
-    t.datetime "failed_at"
-    t.string "locked_by"
-    t.string "queue"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.index ["priority", "run_at"], name: "delayed_jobs_priority"
-  end
 
   create_table "profiles", force: :cascade do |t|
     t.string "first_name"
@@ -38,6 +23,24 @@ ActiveRecord::Schema.define(version: 20171019231933) do
     t.datetime "updated_at", null: false
     t.text "image_data"
     t.index ["user_id"], name: "index_profiles_on_user_id"
+  end
+
+  create_table "schedules", force: :cascade do |t|
+    t.bigint "user_id"
+    t.datetime "run_at"
+    t.integer "priority"
+    t.string "message"
+    t.integer "next_month"
+    t.integer "next_week"
+    t.integer "next_day"
+    t.integer "next_minutes"
+    t.string "valid_days"
+    t.time "start_time"
+    t.time "end_time"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["run_at", "priority"], name: "index_schedule_on_run_at_and_priority"
+    t.index ["user_id"], name: "index_schedules_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,4 +61,5 @@ ActiveRecord::Schema.define(version: 20171019231933) do
   end
 
   add_foreign_key "profiles", "users"
+  add_foreign_key "schedules", "users"
 end

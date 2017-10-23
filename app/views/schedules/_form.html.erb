@@ -1,0 +1,69 @@
+<%= form_with(model: schedule, local: true) do |form| %>
+  <% if schedule.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(schedule.errors.count, "error") %> prohibited this schedule from being saved:</h2>
+
+      <ul>
+      <% schedule.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= form.hidden_field :user_id, id: :schedule_user_id %>
+
+  <div class="field">
+    <%= form.label :run_at %>
+    <%= form.datetime_select :run_at, id: :schedule_run_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :priority %>
+    <%= form.number_field :priority, id: :schedule_priority %>
+  </div>
+
+  <div class="field">
+    <%= form.label :message %>
+    <%= form.text_field :message, id: :schedule_message %>
+  </div>
+
+  <div class="field">
+    <%= form.label :next_month %>
+    <%= form.number_field :next_month, id: :schedule_next_month %>
+  </div>
+
+  <div class="field">
+    <%= form.label :next_week %>
+    <%= form.number_field :next_week, id: :schedule_next_week %>
+  </div>
+
+  <div class="field">
+    <%= form.label :next_day %>
+    <%= form.number_field :next_day, id: :schedule_next_day %>
+  </div>
+
+  <div class="field">
+    <%= form.label :next_minutes %>
+    <%= form.number_field :next_minutes, id: :schedule_next_minutes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valid_days %>
+    <%= form.text_field :valid_days, id: :schedule_valid_days %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_time %>
+    <%= form.time_select :start_time, id: :schedule_start_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_time %>
+    <%= form.time_select :end_time, id: :schedule_end_time %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

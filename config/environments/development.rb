@@ -55,4 +55,5 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 
   #system('RAILS_ENV=development bin/delayed_job -n 1 start &')
+  
 end
